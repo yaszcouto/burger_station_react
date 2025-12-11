@@ -1,0 +1,36 @@
+import banner_1 from '../../assets/Banner1.png'
+import banner_2 from '../../assets/Banner2.png'
+import banner_3 from '../../assets/banner_3.png'
+import banner_5 from '../../assets/Banner para pedidos de lanches moderno laranja (7) 1.png'
+
+
+export default function Carrossel() {
+  return (
+    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={banner_1} className="d-block w-100" alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src={banner_2} className="d-block w-100" alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src={banner_3} className="d-block w-100" alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src={banner_5} className="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+  )
+}
